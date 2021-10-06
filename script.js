@@ -68,6 +68,8 @@ document.querySelector('.btn--new').addEventListener('click', () => {
     pontosP1 = 0;
     pontosP2 = 0;
     current = 0;
+    document.querySelector(".player--0").classList.remove("player--winner");
+    document.querySelector(".player--1").classList.remove("player--winner");
     document.querySelector(".player--1").classList.remove("player--active");
     document.querySelector(".player--0").classList.add("player--active");
     atualizarPontos(0, pontosP1);
